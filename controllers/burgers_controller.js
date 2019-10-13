@@ -4,7 +4,7 @@ var router = express.Router();
 
 var burger = require("../models/burger.js");
 
-console.log("I am controller");
+// console.log("I am controller");
 
 
 router.get("/", function(req, res) {

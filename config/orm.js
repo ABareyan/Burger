@@ -1,6 +1,6 @@
 var connection = require("../config/connection.js");
 
-console.log("I am ORM");
+// console.log("I am ORM");
 
 
 var orm = {

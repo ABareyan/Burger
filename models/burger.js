@@ -1,6 +1,6 @@
 var orm = require("../config/orm.js");
 
-console.log("I am burger.js");
+// console.log("I am burger.js");
 
 
 var burger = {

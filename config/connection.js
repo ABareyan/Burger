@@ -9,7 +9,7 @@ var connection = mysql.createConnection({
     database: "burgers_db"
 });
 
-console.log("I am connection");
+// console.log("I am connection");
 
 
 // Make connection.
