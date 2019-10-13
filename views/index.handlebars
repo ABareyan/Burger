@@ -1,0 +1,33 @@
+<h1>Burger Time</h1>
+
+<h2>Time to eat burger</h2>
+
+<ul>
+    {{#each burger_data}}
+    {{#unless devoured}}
+            <form action="/update/{{this.id}}" method="post">
+            {{ burger_name }}
+            <button class="eatBurger" type="submit" id={{this.id}}>DEVOIR IT!</button>
+            </form>
+    {{/unless}}
+    {{/each}}
+</ul>
+
+<h2>Eaten burgers!</h2>
+
+<ul>
+    {{#each burger_data}}
+    {{#if devoured}}
+        {{ burger_name }}        
+    {{/if}}
+    {{/each}}
+</ul>
+
+<div>
+    <form action="">
+        <input type="text" name="newBurger" class="newBurger">
+        <button class="createBurger" type="submit">Sumbit</button>
+        <br>
+        Are you still hungry? Add burger for eating!
+    </form>
+</div>
