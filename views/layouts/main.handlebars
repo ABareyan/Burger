@@ -18,7 +18,7 @@
         newBurgerInput = $(".newBurger").val().trim();
         $.post("/add", { burger_name: newBurgerInput }, function(data){
             location.reload();
-        })
-    })
+        });
+    });
 </script>
 </html>
